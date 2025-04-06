@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'PalsamArabic-Bold';
   src: url('https://moneershublaq.github.io/fonts/alfontcomPalsamArabicBold.ttf') format('truetype');
@@ -6,6 +5,12 @@
   font-style: normal;
 }
 
-* {
+/* تطبيق الخط على جميع العناصر الشائعة */
+body, html, p, div, h1, h2, h3, h4, h5, h6, a, span, strong, em, li, label, input, button, textarea {
+  font-family: 'PalsamArabic-Bold', sans-serif !important;
+}
+
+/* محاولة استهداف الكلاسات الشائعة في قوالب سلة */
+[class*="text"], [class*="title"], [class*="heading"], [class*="label"] {
   font-family: 'PalsamArabic-Bold', sans-serif !important;
 }
